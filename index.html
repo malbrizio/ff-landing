@@ -165,7 +165,7 @@
           "name": "Can a gym offer multiple apparel designs in one drop?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Forever Fierce runs as many designs as a gym wants on the preorder store — tees, hoodies, tanks, longsleeves, premium blends. One preorder window, one production batch, one delivery date."
+            "text": "Forever Fierce recommends running one design per drop to keep the production batch tight and delivery dates crisp. That one design is typically paired with 3 to 4 garment options — for example, a Memorial Day order might include a men's tee, women's tank, women's crop, and men's tank. Same artwork, different silhouettes, one production run, one delivery date."
           }
         },
         {
@@ -173,7 +173,7 @@
           "name": "How do gyms make money with the preorder apparel model?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Gyms set their own retail price on the private preorder store. Forever Fierce charges a flat per-unit cost. The spread is profit. Because there is no upfront spend and no inventory, the margin is real profit, not speculative."
+            "text": "Gyms set their own retail price on the private preorder store. Forever Fierce's per-unit cost drops with volume. A typical pricing tier is $20.99 each at 24-36 units, $18.99 each at 37-72 units, and $17.99 each at 73-144 units. Example: selling 40 shirts at a $31.99 retail price lands in the 37-72 tier at $18.99 cost, giving $13 profit per shirt — $520 on a single drop. No upfront cost and no inventory risk because production only happens after preorders are collected."
           }
         },
         {
@@ -513,12 +513,41 @@
   }
   .problem-item:last-child { border-bottom: 1px solid var(--line); }
   .problem-item:hover { padding-left: 12px; }
-  .problem-item .num {
+  .problem-list-intro {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bone);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .problem-list-intro::before {
+    content: "✕";
+    color: #E63946;
+    font-size: 18px;
     font-weight: 900;
-    font-size: 20px;
-    color: var(--accent);
+  }
+  .problem-list-intro em {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--bone-dim);
+    letter-spacing: 0.04em;
+    text-transform: none;
+  }
+  .problem-item .mark {
+    font-weight: 900;
+    font-size: 18px;
+    color: #E63946;
     flex-shrink: 0;
-    letter-spacing: 0.02em;
+    line-height: 1.4;
+    opacity: 0.85;
   }
   .problem-item .text {
     font-size: 18px;
@@ -1015,6 +1044,52 @@
     max-width: 720px;
     line-height: 1.65;
   }
+  .price-example {
+    margin: 18px 0 14px;
+    padding: 20px 24px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    display: grid;
+    gap: 10px;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bone-dim);
+  }
+  .price-row strong {
+    color: var(--bone);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+  }
+  .price-math {
+    padding: 16px 20px;
+    background: rgba(147, 213, 0, 0.07);
+    border: 1px solid rgba(147, 213, 0, 0.22);
+    border-radius: 4px;
+    font-size: 14.5px;
+    color: var(--bone);
+    line-height: 1.65;
+    margin-top: 12px;
+  }
+  .price-math .profit {
+    font-weight: 800;
+    color: var(--accent);
+  }
+  .price-caveat {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    margin-top: 10px;
+    font-style: italic;
+  }
 
   /* ===== FINAL CTA ===== */
   .final-cta {
@@ -1207,24 +1282,25 @@
         </p>
       </div>
       <div class="problem-list">
+        <div class="problem-list-intro">Sound familiar? <em>We hear these every single week.</em></div>
         <div class="problem-item">
-          <div class="num">01</div>
+          <div class="mark">✕</div>
           <div class="text">Boxes of leftover shirts <em>sitting in the office closet since 2022</em></div>
         </div>
         <div class="problem-item">
-          <div class="num">02</div>
+          <div class="mark">✕</div>
           <div class="text">Designers who go quiet the second <em>you ask for a revision</em></div>
         </div>
         <div class="problem-item">
-          <div class="num">03</div>
+          <div class="mark">✕</div>
           <div class="text">Upfront costs that turn merch into <em>a risk instead of a revenue stream</em></div>
         </div>
         <div class="problem-item">
-          <div class="num">04</div>
+          <div class="mark">✕</div>
           <div class="text">Setup fees, art fees, minimum spend fees — <em>every extra line item that eats your margin</em></div>
         </div>
         <div class="problem-item">
-          <div class="num">05</div>
+          <div class="mark">✕</div>
           <div class="text">A fulfillment process that eats <em>three hours of your week</em> every week it runs</div>
         </div>
       </div>
@@ -1583,11 +1659,22 @@
       </details>
       <details>
         <summary>What if my members want different designs? <span class="plus">+</span></summary>
-        <div class="answer">We run as many designs as you want on the store — tees, hoodies, tanks, longsleeves, premium blends. One preorder window, one production batch, one delivery date.</div>
+        <div class="answer">We actually recommend running <strong style="color: var(--bone);">one design per drop</strong> — it keeps the production batch tight and the delivery date crisp. But we pair that one design with <strong style="color: var(--bone);">3–4 garment options</strong> so you can hit a wider range of members. A Memorial Day drop might include a men's tee, women's tank, women's crop, and men's tank — same artwork, different silhouettes, one production run, one delivery date.</div>
       </details>
       <details>
         <summary>How do I make money on this? <span class="plus">+</span></summary>
-        <div class="answer">You set the retail price on your private store. We charge a flat per-unit cost. The spread is yours — and because there's no upfront spend and no inventory, the margin is real profit, not "maybe if we sell enough" profit.</div>
+        <div class="answer">
+          You set the retail price on your private preorder store. Our per-unit cost drops as the order grows. Here's a typical tier so you can do the math:
+          <div class="price-example">
+            <div class="price-row"><span>24–36 units</span><strong>$20.99 each</strong></div>
+            <div class="price-row"><span>37–72 units</span><strong>$18.99 each</strong></div>
+            <div class="price-row"><span>73–144 units</span><strong>$17.99 each</strong></div>
+          </div>
+          <div class="price-math">
+            <strong style="color: var(--bone);">Quick math:</strong> Sell 40 shirts at a $31.99 retail price → you're in the 37–72 tier at $18.99 cost → <span class="profit">$13 profit per shirt = $520 on a single drop.</span> No upfront cost, no inventory, no risk.
+          </div>
+          <div class="price-caveat">Example pricing shown. Actual tiers vary by garment style and decoration.</div>
+        </div>
       </details>
       <details>
         <summary>What's the Apparel Plan, exactly? <span class="plus">+</span></summary>
