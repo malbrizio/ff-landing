@@ -27,45 +27,15 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://foreverfierce.com/#organization",
-        "name": "Forever Fierce",
-        "url": "https://foreverfierce.com",
-        "logo": {"@type": "ImageObject", "url": "https://foreverfierce.com/cdn/shop/files/FF_Header_Logo.png?v=1741281196&width=600"},
-        "foundingDate": "2008",
-        "contactPoint": {"@type": "ContactPoint", "telephone": "+18455379986", "email": "matt@foreverfierce.com", "contactType": "sales", "areaServed": "US", "availableLanguage": "English"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://foreverfierce.com/pages/fall-merch-ideas#webpage",
-        "url": "https://foreverfierce.com/pages/fall-merch-ideas",
-        "name": "Fall Gym Merch Design Ideas | Forever Fierce",
-        "description": "Fall gym merch for owners: longsleeves, light hoodies & 3/4 raglans timed to Sept/Oct weather. Free design, samples & preorder—no inventory risk.",
-        "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://foreverfierce.com"},
-          {"@type": "ListItem", "position": 2, "name": "Fall Merch Ideas"}
-        ]}
-      },
-      {
-        "@type": "Service",
-        "@id": "https://foreverfierce.com/pages/fall-merch-ideas#service",
-        "name": "Fall Gym Merch Design & Preorder Program",
-        "provider": {"@id": "https://foreverfierce.com/#organization"},
-        "description": "Forever Fierce designs fall apparel for gyms—longsleeves, lightweight hoodies, and 3/4 sleeve raglans—timed to September and October weather changes, with free design, free sizing samples, preorder stores, and fulfillment.",
-        "areaServed": {"@type": "Country", "name": "United States"},
-        "audience": {"@type": "BusinessAudience", "audienceType": "Gym owners"}
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://foreverfierce.com/pages/fall-merch-ideas#faq",
-        "mainEntity": [
-          {"@type": "Question", "name": "What should a gym sell for fall merch?", "acceptedAnswer": {"@type": "Answer", "text": "Forever Fierce typically focuses fall drops on longsleeves, lightweight hoodies, and 3/4 sleeve raglans—pieces members wear when September and October weather turns cooler."}},
-          {"@type": "Question", "name": "When should we launch a fall drop?", "acceptedAnswer": {"@type": "Answer", "text": "Sync the launch to weather change in September and October so product arrives as members start reaching for layers. Forever Fierce maps timing on a free 15-minute Apparel Plan call."}},
-          {"@type": "Question", "name": "Does Forever Fierce design the fall art?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Forever Fierce provides custom design support at no art fee. You can start from three fall mockups or go fully custom."}},
-          {"@type": "Question", "name": "Is there inventory risk on a fall drop?", "acceptedAnswer": {"@type": "Answer", "text": "No. Forever Fierce runs a preorder model: members buy first, then Forever Fierce prints what sold. Free sizing samples help members pick the right fit."}}
-        ]
-      }
+      {"@type":"Organization","@id":"https://foreverfierce.com/#organization","name":"Forever Fierce","url":"https://foreverfierce.com","logo":{"@type":"ImageObject","url":"https://foreverfierce.com/cdn/shop/files/FF_Header_Logo.png?v=1741281196&width=600"},"foundingDate":"2008","contactPoint":{"@type":"ContactPoint","telephone":"+18455379986","email":"matt@foreverfierce.com","contactType":"sales","areaServed":"US","availableLanguage":"English"}},
+      {"@type":"WebPage","@id":"https://foreverfierce.com/pages/fall-merch-ideas#webpage","url":"https://foreverfierce.com/pages/fall-merch-ideas","name":"Fall Gym Merch Design Ideas | Forever Fierce","description":"Fall gym merch for owners: longsleeves, light hoodies & 3/4 raglans timed to Sept/Oct weather. Free design, samples & preorder—no inventory risk.","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://foreverfierce.com"},{"@type":"ListItem","position":2,"name":"Fall Merch Ideas"}]}},
+      {"@type":"Service","@id":"https://foreverfierce.com/pages/fall-merch-ideas#service","name":"Fall Gym Merch Design & Preorder Program","provider":{"@id":"https://foreverfierce.com/#organization"},"description":"Forever Fierce designs fall apparel for gyms—longsleeves, lightweight hoodies, and 3/4 sleeve raglans—timed to September and October weather changes, with free design, free sizing samples, preorder stores, and fulfillment.","areaServed":{"@type":"Country","name":"United States"},"audience":{"@type":"BusinessAudience","audienceType":"Gym owners"}},
+      {"@type":"FAQPage","@id":"https://foreverfierce.com/pages/fall-merch-ideas#faq","mainEntity":[
+        {"@type":"Question","name":"What should a gym sell for fall merch?","acceptedAnswer":{"@type":"Answer","text":"Forever Fierce typically focuses fall drops on longsleeves, lightweight hoodies, and 3/4 sleeve raglans—pieces members wear when September and October weather turns cooler."}},
+        {"@type":"Question","name":"When should we launch a fall drop?","acceptedAnswer":{"@type":"Answer","text":"Sync the launch to weather change in September and October so product arrives as members start reaching for layers. Forever Fierce maps timing on a free 15-minute Apparel Plan call."}},
+        {"@type":"Question","name":"Does Forever Fierce design the fall art?","acceptedAnswer":{"@type":"Answer","text":"Yes. Forever Fierce provides custom design support at no art fee. You can start from three fall mockups or go fully custom."}},
+        {"@type":"Question","name":"Is there inventory risk on a fall drop?","acceptedAnswer":{"@type":"Answer","text":"No. Forever Fierce runs a preorder model: members buy first, then Forever Fierce prints what sold. Free sizing samples help members pick the right fit."}}
+      ]}
     ]
   }
   </script>
@@ -84,7 +54,8 @@
     .side-card{border:2px solid var(--ink);background:#fff;padding:32px 28px;box-shadow:9px 9px 0 var(--lime)}.side-card h2{font-size:36px;margin-bottom:14px}.side-card p{font-size:14px;color:var(--soft);line-height:1.6}.side-list{list-style:none;margin-top:20px;border-top:2px solid var(--ink);padding-top:16px}.side-list li{font-size:13px;padding:8px 0 8px 18px;position:relative;color:var(--soft)}.side-list li:before{content:'—';position:absolute;left:0;color:var(--lime-deep);font-weight:800}
     .trust{overflow:hidden;background:var(--ink);color:#fff;padding:21px 0}.trust-track{display:inline-flex;white-space:nowrap;gap:38px;padding-left:38px;animation:ticker 32s linear infinite;font:800 24px var(--display);text-transform:uppercase}.trust-track em{font-style:normal;color:var(--lime)}@keyframes ticker{to{transform:translateX(-50%)}}
     .how{padding:105px 0;background:var(--off)}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(11,11,11,.14);border:1px solid rgba(11,11,11,.14);margin-top:48px}.how-step{background:var(--off);padding:36px 28px}.how-num{font:900 48px/.85 var(--display);color:var(--lime-deep);margin-bottom:18px}.how-step h3{font-size:28px;margin-bottom:10px}.how-step p{font-size:14px;color:var(--soft);line-height:1.6}
-    .ideas{padding:110px 0}.ideas-head{display:grid;grid-template-columns:1fr .75fr;gap:40px;align-items:end;margin-bottom:48px}.ideas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.idea{border:2px solid var(--ink);background:#fff;overflow:hidden;display:flex;flex-direction:column}.idea-art{aspect-ratio:1;background:repeating-linear-gradient(45deg,#f2ede4,#f2ede4 12px,#e8e2d6 12px,#e8e2d6 24px);border-bottom:2px solid var(--ink);display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}.idea-art span{font:700 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.idea-body{padding:24px 22px 28px}.idea-body h3{font-size:26px;margin-bottom:10px}.idea-body p{font-size:14px;color:var(--soft);line-height:1.55;min-height:66px}.idea-tag{display:inline-block;margin-top:14px;padding:4px 8px;background:var(--lime);color:var(--ink);font:700 9px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+    .ideas{padding:90px 0 100px;background:#fff}.ideas-head{display:grid;grid-template-columns:1fr .75fr;gap:40px;align-items:end;margin-bottom:40px}.ideas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.idea{border:2px solid var(--ink);background:#fff;overflow:hidden;display:flex;flex-direction:column}.idea-art{aspect-ratio:1;background:repeating-linear-gradient(45deg,#f2ede4,#f2ede4 12px,#e8e2d6 12px,#e8e2d6 24px);border-bottom:2px solid var(--ink);display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}.idea-art span{font:700 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.idea-body{padding:24px 22px 28px}.idea-body h3{font-size:26px;margin-bottom:10px}.idea-body p{font-size:14px;color:var(--soft);line-height:1.55;min-height:66px}.idea-tag{display:inline-block;margin-top:14px;padding:4px 8px;background:var(--lime);color:var(--ink);font:700 9px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+    .mech-line{margin-top:28px;padding:16px 20px;border:2px solid var(--ink);background:var(--off);font:600 12px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);text-align:center}
     .garments{padding:110px 0;background:var(--ink);color:#fff}.garments .eyebrow{color:var(--lime)}.garments .section-title{color:#fff;max-width:920px}.garments .section-copy{color:rgba(255,255,255,.72)}.garment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.13);margin-top:48px}.garment{background:var(--ink);padding:36px 28px;min-height:260px}.garment-num{font:900 48px/.85 var(--display);color:var(--lime);margin-bottom:22px}.garment h3{font-size:28px;color:#fff;margin-bottom:12px}.garment p{font-size:14px;line-height:1.65;color:rgba(255,255,255,.68)}
     .why{padding:110px 0}.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}.why-points{border-top:3px solid var(--ink)}.why-row{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}.why-mark{font:900 24px var(--display);color:var(--lime)}.why-row h3{font-size:24px;margin-bottom:6px}.why-row p{font-size:14px;color:var(--soft)}
     .stats{display:grid;grid-template-columns:repeat(5,1fr);border:3px solid var(--ink);margin:48px 0 0}.stat{padding:28px 18px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat strong{display:block;font:900 clamp(36px,4.5vw,56px)/.9 var(--display);color:var(--lime-deep)}.stat span{display:block;margin-top:10px;font:600 9px var(--mono);letter-spacing:.1em;text-transform:uppercase}
@@ -140,6 +111,25 @@
       </div>
     </div>
 
+    <section class="ideas" id="mockups">
+      <div class="container">
+        <div class="ideas-head">
+          <div class="reveal">
+            <div class="eyebrow">3 fall mockups</div>
+            <h2 class="section-title">React to a direction. <span class="accent">Or go fully custom.</span></h2>
+          </div>
+          <p class="section-copy reveal">Three mockup slots—drop real art when ready. Pick one to adapt for your gym, or start from a blank brief. Either path includes free design support from Forever Fierce.</p>
+        </div>
+        <div class="ideas-grid">
+          <article class="idea reveal"><div class="idea-art"><span>Mockup 01<br>Fall concept</span></div><div class="idea-body"><h3>Mockup 01</h3><p>Primary fall direction—built for longsleeve volume and everyday wear once temperatures drop.</p><span class="idea-tag">Longsleeve</span></div></article>
+          <article class="idea reveal"><div class="idea-art"><span>Mockup 02<br>Fall concept</span></div><div class="idea-body"><h3>Mockup 02</h3><p>Layer-forward concept for lightweight hoodies—higher ticket when the first cool weeks hit.</p><span class="idea-tag">Lightweight hoodie</span></div></article>
+          <article class="idea reveal"><div class="idea-art"><span>Mockup 03<br>Fall concept</span></div><div class="idea-body"><h3>Mockup 03</h3><p>Raglan-friendly training graphic for transitional September/October weather.</p><span class="idea-tag">3/4 raglan</span></div></article>
+        </div>
+        <div class="mech-line reveal">Pick a direction or go custom · free design · members preorder · we print &amp; ship</div>
+        <div class="note-bar reveal"><strong>Timing note:</strong> Plan the preorder so shirts arrive as weather actually changes in September/October—not after members have already bought layers somewhere else.</div>
+      </div>
+    </section>
+
     <section class="how" id="how">
       <div class="container">
         <div class="eyebrow reveal">How it works</div>
@@ -162,24 +152,6 @@
           <article class="garment reveal"><div class="garment-num">02</div><h3>Lightweight hoodies</h3><p>Higher ticket for the first cold fronts. Strong absolute profit without jumping straight to heavyweight fleece.</p></article>
           <article class="garment reveal"><div class="garment-num">03</div><h3>3/4 sleeve raglans</h3><p>Training hybrid for transitional weather—still useful mid-WOD, still intentional after class.</p></article>
         </div>
-      </div>
-    </section>
-
-    <section class="ideas" id="mockups">
-      <div class="container">
-        <div class="ideas-head">
-          <div class="reveal">
-            <div class="eyebrow">3 fall mockups</div>
-            <h2 class="section-title">React to a direction. <span class="accent">Or go fully custom.</span></h2>
-          </div>
-          <p class="section-copy reveal">Three mockup slots—drop real art when ready. Pick one to adapt for your gym, or start from a blank brief. Either path includes free design support from Forever Fierce.</p>
-        </div>
-        <div class="ideas-grid">
-          <article class="idea reveal"><div class="idea-art"><span>Mockup 01<br>Fall concept</span></div><div class="idea-body"><h3>Mockup 01</h3><p>Primary fall direction—built for longsleeve volume and everyday wear once temperatures drop.</p><span class="idea-tag">Longsleeve</span></div></article>
-          <article class="idea reveal"><div class="idea-art"><span>Mockup 02<br>Fall concept</span></div><div class="idea-body"><h3>Mockup 02</h3><p>Layer-forward concept for lightweight hoodies—higher ticket when the first cool weeks hit.</p><span class="idea-tag">Lightweight hoodie</span></div></article>
-          <article class="idea reveal"><div class="idea-art"><span>Mockup 03<br>Fall concept</span></div><div class="idea-body"><h3>Mockup 03</h3><p>Raglan-friendly training graphic for transitional September/October weather.</p><span class="idea-tag">3/4 raglan</span></div></article>
-        </div>
-        <div class="note-bar reveal"><strong>Timing note:</strong> Plan the preorder so shirts arrive as weather actually changes in September/October—not after members have already bought layers somewhere else.</div>
       </div>
     </section>
 
